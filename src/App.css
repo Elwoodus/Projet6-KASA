@@ -1,0 +1,12 @@
+:root {
+  --red:#ff6060;
+  
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1258px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
