@@ -1,44 +1,43 @@
 import React from 'react';
-import { createBrowserRouter , Outlet } from 'react-router-dom';
-import App from '../App.jsx';
+import { createBrowserRouter, Outlet } from 'react-router-dom';
+import Homepage from '../Pages/Homepage.jsx';
 import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
-import Main from '../components/Main.jsx';
+import Footer from '../Layout/Footer.jsx';
+import Main from '../Layout/Main.jsx';
+import ApartmentPage from '../Pages/ApartmentPage.jsx';
 
 
 
 const HeaderFooterLayout = () => {
-  return ( <>
-      <Navbar />
-      <Main>
+  return (<>
+    <Navbar />
+    <Main>
       <Outlet />
-      </Main>
-      <Footer />
-      </>
+    </Main>
+    <Footer />
+  </>
   );
 };
 
- const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
     errorElement: <h1>404 not found</h1>,
     children: [
       {
         path: '/',
-        element : <App />
+        element: <Homepage />
       },
       {
         path: '/flat',
-        
-        element:   <h1>Appartements</h1>,
-        
-        
+
+        element: <ApartmentPage/>
       },
       {
         path: '/about',
         element: (
           <h1>A propos</h1>
-            )
+        )
       },
     ],
   },
