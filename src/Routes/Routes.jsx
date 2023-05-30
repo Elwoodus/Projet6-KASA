@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar.jsx';
 import Footer from '../Layout/Footer.jsx';
 import Main from '../Layout/Main.jsx';
 import ApartmentPage from '../Pages/ApartmentPage.jsx';
+import About from '../Pages/About.jsx';
 
 
 
@@ -35,9 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/about',
-        element: (
-          <h1>A propos</h1>
-        )
+        element: <About />
       },
     ],
   },
