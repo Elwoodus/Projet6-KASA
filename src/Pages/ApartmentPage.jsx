@@ -1,5 +1,7 @@
 import React from 'react' ;
+import { ApartmentDescription } from '../components/ApartmentDescription';
 import "./ApartmentPage.scss";
+
 
 function ApartmentPage() {
   return (
@@ -34,21 +36,13 @@ function ApartmentPage() {
                     </div>
                     </div>
                     </div>
-                    <div className="apartment_description">
-                        <p>Description</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odit, quidem blanditiis architecto debitis 
-                            suscipit harum tempore quibusdam ratione vitae numquam saepe, quam quis placeat nam excepturi aut autem temporibus aliquid at commodi 
-                            doloribus beatae explicabo. Maiores, atque harum voluptas quod eveniet tempora illum iste repellat ea, fugiat est voluptates?</p>
-                    </div>
-                    <div className="apartment_description">
-                        <p>Description</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odit, quidem blanditiis architecto debitis 
-                            suscipit harum tempore quibusdam ratione vitae numquam saepe, quam quis placeat nam excepturi aut autem temporibus aliquid at commodi 
-                            doloribus beatae explicabo. Maiores, atque harum voluptas quod eveniet tempora illum iste repellat ea, fugiat est voluptates?</p>
-                    </div>
+                    <ApartmentDescription />
+                    <ApartmentDescription />
+                    
+                    
             </div>
        
   )
 }
 
-export default ApartmentPage
+export default ApartmentPage;
