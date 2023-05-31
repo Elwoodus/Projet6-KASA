@@ -20,9 +20,9 @@
     .apartment_owner {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         @media screen and (width <=768px) {
             flex-direction: row;
+            justify-content: space-between;
         }
 
     }
@@ -53,13 +53,10 @@
         align-items: center;
         gap: 0.2rem;
         font-size: 2rem;
+        color: $grid-background-dark;
 
         .on {
             color: $color-primary;
-        }
-
-        .off {
-            color: $grid-background-dark;
         }
     }
 

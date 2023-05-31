@@ -3,7 +3,7 @@ import { DescriptionPanel } from '../components/DescriptionPanel';
 import "./ApartmentPage.scss";
 import ImageBanner from '../components/ImageBanner';
 import ApartmentHeader from '../components/ApartmentHeader';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 
@@ -27,12 +27,11 @@ function ApartmentPage() {
 
     return (
         <div className="apartment-page">
-            selected flat:{JSON.stringify(flat)}
             <ImageBanner imageUrl={flat.cover} />
             <ApartmentHeader flat={flat} />
             <div className="apartment_description_area">
-                <DescriptionPanel />
-                <DescriptionPanel />
+                <DescriptionPanel title="Description" content={flat.description} />
+                <DescriptionPanel title="Equipement" content={flat.equipments.map(eq => <li>{eq}</li>)} />
             </div>
             </div>
 
