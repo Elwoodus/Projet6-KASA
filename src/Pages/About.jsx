@@ -6,7 +6,7 @@ import './About.scss';
 function About() {
     return (
         <div className="about">
-            <ImageBanner pictures={['about_cover.png']} hideNavigation={true} />
+            <ImageBanner pictures={['about_cover.png']} hideNavigation={true} hideCount={true} />
 
             <div className='about_container'>
                 <DescriptionPanel title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
