@@ -27,7 +27,7 @@ function ApartmentPage() {
 
     return (
         <div className="apartment-page">
-            <ImageBanner imageUrl={flat.cover} />
+            <ImageBanner pictures={flat.pictures} />
             <ApartmentHeader flat={flat} />
             <div className="apartment_description_area">
                 <DescriptionPanel title="Description" content={flat.description} />
