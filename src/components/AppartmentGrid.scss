@@ -1,27 +1,26 @@
 @use "../Scss/variables.scss" as *;
 
-.grid{
-    background-color: $grid-background-dark;
-    min-height: 50vh ;
-    border-radius: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-    justify-content: space-between;
-    & > * {
-        width: 100%;
-        max-width: 20rem;
-    }
+.grid {
+  background-color: $grid-background-dark;
+  min-height: 50vh;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  
+  .card-wrapper {
+    width: 100%;
+    max-width: 17rem;
+    margin: auto; /* Ajout de la marge automatique pour centrer les cartes */
+    margin-bottom: 1rem;
+  }
 }
 
-@media screen and (width <= 768px) {
-    .grid {
-        justify-content: center;
-        background-color: $grid-background-light;
-        padding: 0 ;
-    }
+@media screen and (max-width: 768px) {
+  .grid {
+    justify-content: center;
+    background-color: $grid-background-light;
+    padding: 0;
+  }
 }
-
-
-
