@@ -1,4 +1,8 @@
-Pour lancer le projet il faut installer le module via Node.js à la racine : 
+Pour lancer le projet il faut installer les modules via Node.js à la racine : 
+
+"npm install"
+
+et
 
 "npm install react-router-dom"
 
