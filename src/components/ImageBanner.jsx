@@ -26,25 +26,19 @@ function ImageBanner(props) {
                     />
                 ))}
             </div>
-            {!props.hideNavigation && (
-                <>
-                    <img
-                        src="chevron_carousel_left.png"
-                        alt="Previous"
-                        className="carousel__prev"
-                        onClick={handlePrevImage}
-                    />
-                    <img
-                        src="chevron_carousel_right.png"
-                        alt="Next"
-                        className="carousel__next"
-                        onClick={handleNextImage}
-                    />
-                </>
-            )}
-            {!props.hideCount && (
-                <div className="image_count">{`${currentIndex + 1}/${pictures.length}`}</div>
-            )}
+            <img
+                src="chevron_carousel_left.png"
+                alt="Previous"
+                className="carousel__prev"
+                onClick={handlePrevImage}
+            />
+            <img
+                src="chevron_carousel_right.png"
+                alt="Next"
+                className="carousel__next"
+                onClick={handleNextImage}
+            />
+            <div className="image_count">{`${currentIndex + 1}/${pictures.length}`}</div>
         </div>
     );
 }
