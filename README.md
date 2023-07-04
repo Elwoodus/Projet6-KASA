@@ -1,4 +1,4 @@
-# Project 11 OpenClassrooms - Develop a web application with React and React Router
+# Project 6 OpenClassrooms - Develop a web application with React and React Router
 
 Développer une nouvelle plate-forme Web pour une entreprise appelée Kasa, spécialisée dans la location d'appartements depuis près de 10 ans maintenant.
 Avec plus de 500 annonces déposées chaque jour, Kasa est l'un des leaders de la location d'appartements en France.
