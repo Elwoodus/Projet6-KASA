@@ -40,11 +40,20 @@
     }
 }
 
-@media screen and (width <= 768px) {
-    .apartment{
+@media screen and (max-width: 768px) {
+    .grid > * {
+        max-width: none;
+    }
+    
+    .apartment {
         flex-basis: 100%;
     }
+    
+    .apartment img {
+        height: 276px; /* Réduisez la valeur de la hauteur selon vos besoins */
+    }
 }
+
 
 
 
